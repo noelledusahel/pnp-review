@@ -1,7 +1,20 @@
-<div class="profile">
 
-	<% @businesses.each do |business| %>
-		<img src='<%=image_path("#{business.image_location}") %>'/>
-	<% end  %> 
-</div>
+<% @businesses.each do |business| %>
+	<div class="profile">
+				<img src='<%=image_path("#{business.image_location}") %>' class="hover"/>
+					<p id="<%=business.id%>"><%=business.name %></p>
+		
+	</div>
+<% end  %> 
+
+		<script>
+			$('.hover').mouseover(function(){
+		    	$('#2').css('visibility', 'visible')
+			});
+			$('.hover').mouseout(function(){
+				$('#2').css('visibility', 'hidden')
+			})
+		</script>
+
+
 
