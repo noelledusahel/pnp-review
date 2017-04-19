@@ -1,6 +1,7 @@
 <div class="profile">
 
-	<img  src="<%= image_path('SMBB.jpg') %>" class="hoverable"/>
-
+	<% @businesses.each do |business| %>
+		<img src='<%=image_path("#{business.image_location}") %>'/>
+	<% end  %> 
 </div>
 
