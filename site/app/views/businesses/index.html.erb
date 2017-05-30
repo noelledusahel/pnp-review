@@ -1,14 +1,15 @@
 
 	<div class="profile">
 <% @businesses.each do |business| %>
-			
+			<div class="biz-profile">
 				<img src='<%=image_path("#{business.image_location}") %>' class="hover"/>
-				<!-- <p id="<%=business.id%>"><%=business.name %></p> -->
+				<p id="<%=business.id%>"><%=business.name %></p>
+			</div>
 	
 <% end  %> 
 	</div>
 
-		<script>
+		<!-- <script>
 			$('.hover').mouseover(function(){
 		    	$('this').css('visibility', 'visible')
 		    	console.log(this)
@@ -16,7 +17,7 @@
 			$('.hover').mouseout(function(){
 				$('p').css('visibility', 'hidden')
 			})
-		</script>
+		</script> -->
 
 
 
