@@ -31,10 +31,13 @@ body {
   font-style: normal;
 }
 
-img {
+.profile {
+    margin-top: 30px;
     display: flex;
-    align-items: flex-start;
-    /*flex-direction: column-reverse;*/
+    flex-direction: row;
+}
+
+img {
     margin: 10px;
     border-radius: 8px;
     height: 20%;
