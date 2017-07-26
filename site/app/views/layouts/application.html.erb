@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Site</title>
-    <%= csrf_meta_tags %>
+	<head>
+		<title>Site</title>
+		<%= csrf_meta_tags %>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+	</head>
+ 	
+ 	<div id="main-container" class="container-fluid">
+		<h1> P.N.P. Review </h1>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-  <div class="sub-header">
-  <h1> P.N.P. Review </h1>
 
-
-</div>
+	</div>
 <nav>
 	<%= link_to "Home", root_path %>
 </nav>
-  <body>
-    <%= yield %>
-  </body>
+	<body>
+		<%= yield %>
+	</body>
 </html>

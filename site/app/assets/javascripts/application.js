@@ -13,8 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap-sprockets
 //= require_tree .
-
 // $(".hoverable").hover(function(){
 //                 console.log("hovered");
 //             });
