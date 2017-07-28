@@ -6,16 +6,18 @@
 		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 	</head>
- 	
- 	<div id="main-container" class="container-fluid">
-		<h1> P.N.P. Review </h1>
 
-
-	</div>
-<nav>
-	<%= link_to "Home", root_path %>
-</nav>
 	<body>
-		<%= yield %>
+		<div class="container-fluid">
+			<nav class="navbar navbar-inverse">
+			 	<!-- <div class="navbar-header"> -->
+			<!--  <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home"></span></a> -->
+			 		<ul class="nav navbar-nav">
+			 			<li><%= link_to "Home", root_path %></li> 
+			 		</ul>
+			 	<!-- </div> -->
+			 </nav>
+		</div>
+			<%= yield %>
 	</body>
 </html>

@@ -1,13 +1,18 @@
 
+<div class="container">
 	<div class="profile">
-<% @businesses.each do |business| %>
-			<div class="biz-profile">
-				<img src='<%=image_path("#{business.image_location}") %>' class="hover"/>
-				<p id="<%=business.id%>"><%=business.name %></p>
-			</div>
-	
-<% end  %> 
+		<div class=row>
+			<% @businesses.each do |business| %>
+					<div class="col-sm-4">
+						<div class="biz-profile">
+							<img src='<%=image_path("#{business.image_location}") %>' class="hover"/>
+							<p id="<%=business.id%>"><%=business.name %></p>
+						</div>	
+					</div>	
+			<% end  %>
+		</div> 
 	</div>
+</div>
 
 		<!-- <script>
 			$('.hover').mouseover(function(){
