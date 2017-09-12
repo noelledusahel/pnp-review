@@ -1,0 +1,63 @@
+/*
+ / * This is a manifest file that'll be compiled into application.css, which will include all the files
+ / * listed below.
+ / *
+ / * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ / * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ / *
+ / * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ / * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ / * files in this directory. Styles in this file should be added after the last require_* statement.
+ / * It is generally better to create a new file per style scope.
+ / *
+ / *= require_tree .
+ / *= require_self
+ / */
+
+@import "bootstrap";
+
+body {
+	text-align: center
+}
+
+@font-face {
+		font-family: 'Milkshake';
+		src: url(/assets/Milkshake.eot);
+		src: url(/assets/Milkshake.eot?#iefix) format("embedded-opentype"), 
+		url(/assets/Milkshake.ttf) format("truetype"),
+		url(/assets/Milkshake.woff) format("woff"),
+		url(/assets/Milkshake.svg#Milkshake) format("svg");
+		font-weight: normal;
+		font-style: normal;
+}
+
+.profile {
+		margin-top: 30px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+}
+
+.biz-profile {
+		margin-left: 10px;
+}
+
+
+img {
+		border-radius: 8px;
+		height: 80%;
+		width: 80%;
+		justify-content: center;
+
+}
+
+ .biz-profile p {
+		display: flex;
+		justify-content: center;
+		width: 80%;
+		font-family: 'milkshake';
+}
+
+.sub-header {
+		font-family: 'milkshake';
+}
